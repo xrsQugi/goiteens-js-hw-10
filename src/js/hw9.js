@@ -1,6 +1,6 @@
-const span = document.querySelector(".color")
-const btnChangeColor = document.querySelector(".change-color")
-const divWidget = document.querySelector(".widget");
+export const span = document.querySelector(".color")
+export const btnChangeColor = document.querySelector(".change-color")
+export const divWidget = document.querySelector(".widget");
 
 if (document.body.style.backgroundColor = '#FFFFFF') {
     divWidget.style.backgroundColor = '#D9D9D9';
@@ -22,7 +22,7 @@ export const changeColorOnClick = () => {
 }
 
 //!pill ===============================================================
-const toggle = document.querySelector('#pill3');
+export const toggle = document.querySelector('#pill3');
 
 export const handleClick = () => {
   console.log("click event listener callback");
