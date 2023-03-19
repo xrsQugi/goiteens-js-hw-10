@@ -150,7 +150,6 @@ h2 {
 #counter button {
   width: 132px;
   height: 38px;
-  background-color: #fff;
   border-radius: 50px;
   font-family: Inter;
   font-size: 20px;
@@ -161,6 +160,7 @@ h2 {
 
 button[data-action="decrement"] {
   color: red;
+  background-color: #fff;
   border: 2px solid red;
 }
 
@@ -171,6 +171,7 @@ button[data-action="decrement"]:hover {
 
 button[data-action="increment"] {
   color: green;
+  background-color: #fff;
   border: 2px solid green;
 }
 

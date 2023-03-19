@@ -515,10 +515,15 @@ _hw9.toggle.addEventListener("click", _hw9.changeListenerBtn);
 },{"./js/hw8":"5Umg3","./js/hw9":"7dIQ2"}],"5Umg3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "counterInput", ()=>counterInput);
+parcelHelpers.export(exports, "counterValue", ()=>counterValue);
+parcelHelpers.export(exports, "decrement", ()=>decrement);
+parcelHelpers.export(exports, "increment", ()=>increment);
 parcelHelpers.export(exports, "plusOne", ()=>plusOne);
 parcelHelpers.export(exports, "minusOne", ()=>minusOne);
+parcelHelpers.export(exports, "inputText", ()=>inputText);
+parcelHelpers.export(exports, "outputText", ()=>outputText);
 parcelHelpers.export(exports, "setOutput", ()=>setOutput);
-//! Завдання 1 ===================================
 const counterInput = document.querySelector("#value");
 let counterValue = 0;
 const decrement = document.querySelector('[data-action="decrement"]');
@@ -531,7 +536,6 @@ const minusOne = ()=>{
     counterValue -= 1;
     counterInput.textContent = counterValue;
 };
-//! Завдання 2 ===================================
 const inputText = document.querySelector("#name-input");
 const outputText = document.querySelector("#name-output");
 const setOutput = (event)=>{
@@ -572,8 +576,12 @@ exports.export = function(dest, destName, get) {
 },{}],"7dIQ2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "span", ()=>span);
+parcelHelpers.export(exports, "btnChangeColor", ()=>btnChangeColor);
+parcelHelpers.export(exports, "divWidget", ()=>divWidget);
 parcelHelpers.export(exports, "getRandomHexColor", ()=>getRandomHexColor);
 parcelHelpers.export(exports, "changeColorOnClick", ()=>changeColorOnClick);
+parcelHelpers.export(exports, "toggle", ()=>toggle);
 parcelHelpers.export(exports, "handleClick", ()=>handleClick);
 parcelHelpers.export(exports, "changeListenerBtn", ()=>changeListenerBtn);
 const span = document.querySelector(".color");
@@ -586,13 +594,12 @@ function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
 }
 const changeColorOnClick = ()=>{
-    color = getRandomHexColor();
+    const color = getRandomHexColor();
     span.textContent = color;
     document.body.style.backgroundColor = color;
     divWidget.style.backgroundColor = "#FFFFFF";
     btnChangeColor.style.backgroundColor = "#D9D9D9";
 };
-//!pill ===============================================================
 const toggle = document.querySelector("#pill3");
 const handleClick = ()=>{
     console.log("click event listener callback");

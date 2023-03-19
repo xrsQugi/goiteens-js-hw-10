@@ -2,6 +2,7 @@ export const span = document.querySelector(".color")
 export const btnChangeColor = document.querySelector(".change-color")
 export const divWidget = document.querySelector(".widget");
 
+
 if (document.body.style.backgroundColor = '#FFFFFF') {
     divWidget.style.backgroundColor = '#D9D9D9';
     btnChangeColor.style.backgroundColor = '#FFFFFF';
@@ -14,7 +15,7 @@ export function getRandomHexColor() {
 }
 
 export const changeColorOnClick = () => {
-    color = getRandomHexColor();
+    const color = getRandomHexColor();
     span.textContent = color;
     document.body.style.backgroundColor = color;
     divWidget.style.backgroundColor = '#FFFFFF';

@@ -34,7 +34,6 @@ h2{
     button{
         width: 132px;
         height: 38px;
-        background-color: #FFFFFF;
         border-radius: 50px;
         transition: .2s background-color, .2s color;
         font-family: 'Inter';
@@ -45,16 +44,18 @@ h2{
 }
 
 button[data-action="decrement"]{
+    background-color: #FFFFFF;
     border: 2px solid red;
     color: red;
 
     &:hover{
-        background-color: red;
+        background-color: rgb(255, 0, 0);
         color: white;
     }
 }
 
 button[data-action="increment"]{
+    background-color: #FFFFFF;
     border: 2px solid green;
     color: green;
 
