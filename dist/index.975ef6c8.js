@@ -579,6 +579,10 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "span", ()=>span);
 parcelHelpers.export(exports, "btnChangeColor", ()=>btnChangeColor);
 parcelHelpers.export(exports, "divWidget", ()=>divWidget);
+// if (document.body.style.backgroundColor = '#FFFFFF') {
+//     divWidget.style.backgroundColor = '#D9D9D9';
+//     btnChangeColor.style.backgroundColor = '#FFFFFF';
+// }
 parcelHelpers.export(exports, "getRandomHexColor", ()=>getRandomHexColor);
 parcelHelpers.export(exports, "changeColorOnClick", ()=>changeColorOnClick);
 parcelHelpers.export(exports, "toggle", ()=>toggle);
@@ -587,9 +591,6 @@ parcelHelpers.export(exports, "changeListenerBtn", ()=>changeListenerBtn);
 const span = document.querySelector(".color");
 const btnChangeColor = document.querySelector(".change-color");
 const divWidget = document.querySelector(".widget");
-document.body.style.backgroundColor = "#FFFFFF";
-divWidget.style.backgroundColor = "#D9D9D9";
-btnChangeColor.style.backgroundColor = "#FFFFFF";
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
 }
@@ -597,8 +598,8 @@ const changeColorOnClick = ()=>{
     const color = getRandomHexColor();
     span.textContent = color;
     document.body.style.backgroundColor = color;
-    divWidget.style.backgroundColor = "#FFFFFF";
-    btnChangeColor.style.backgroundColor = "#D9D9D9";
+// divWidget.style.backgroundColor = '#FFFFFF';
+// btnChangeColor.style.backgroundColor = '#D9D9D9';
 };
 const toggle = document.querySelector("#pill3");
 const handleClick = ()=>{
