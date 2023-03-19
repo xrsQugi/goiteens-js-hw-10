@@ -1,6 +1,0 @@
-const e=document.querySelector("#value");let t=0;const o=document.querySelector('[data-action="decrement"]'),n=document.querySelector('[data-action="increment"]'),c=document.querySelector("#name-input"),r=document.querySelector("#name-output"),l=document.querySelector(".color"),d=document.querySelector(".change-color"),u=document.querySelector(".widget");document.body.style.backgroundColor="#FFFFFF",u.style.backgroundColor="#D9D9D9",d.style.backgroundColor="#FFFFFF";const a=()=>{color=`#${Math.floor(16777215*Math.random()).toString(16).padStart(6,0)}`,l.textContent=color,document.body.style.backgroundColor=color,u.style.backgroundColor="#FFFFFF",d.style.backgroundColor="#D9D9D9"},i=document.querySelector("#pill3");
-//!=======================homeWork 8============================
-n.addEventListener("click",(()=>{t+=1,e.textContent=t})),o.addEventListener("click",(()=>{t-=1,e.textContent=t})),c.addEventListener("input",(e=>{r.textContent=e.currentTarget.value,""===r.textContent.trim()&&(r.textContent="Anonymous")})),
-//!=======================homeWork 9============================
-i.addEventListener("click",(()=>{i.checked?d.addEventListener("click",a):d.removeEventListener("click",a)}));
-//# sourceMappingURL=index.00807e88.js.map
